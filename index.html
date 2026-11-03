@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Magic Eye Studio — Jenga-Code</title>
+    <meta
+      name="description"
+      content="Create stereograms from custom depth maps, retro faces and your own images. All processing stays in your browser."
+    />
+    <link rel="canonical" href="https://jenga-code.com/apps/magic-eye/" />
+    <link rel="stylesheet" href="css/style-v4.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to studio</a>
+    <header class="site-header">
+      <a aria-label="Jenga-Code homepage" class="brand" href="/"
+        ><svg
+          aria-hidden="true"
+          class="compass-mark"
+          height="54"
+          viewBox="0 0 64 64"
+          width="54"
+        >
+          <circle
+            cx="32"
+            cy="32"
+            fill="none"
+            r="23"
+            stroke="currentColor"
+            stroke-width="1"
+          ></circle>
+          <path
+            d="M32 2 38 26 62 32 38 38 32 62 26 38 2 32 26 26Z"
+            fill="none"
+            stroke="currentColor"
+          ></path>
+          <path
+            d="M32 7 32 32 26 26ZM57 32 32 32 38 26ZM32 57 32 32 38 38ZM7 32 32 32 26 38Z"
+            fill="currentColor"
+          ></path>
+          <circle cx="32" cy="32" fill="currentColor" r="3"></circle></svg
+        ><span
+          >Jenga-Code<small
+            >ALGORITHMS · GAMES · MATHEMATICAL IDEAS</small
+          ></span
+        ></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="/">Home</a><a aria-current="page" href="/apps/">Applications</a
+        ><a href="/blog/">Journal</a
+        ><a href="/qualifications/">Qualifications</a>
+      </nav>
+      <img
+        class="masthead-art"
+        src="images/optical-study.webp"
+        width="360"
+        height="120"
+        alt=""
+      />
+    </header>
+    <main id="main" class="publication">
+      <aside class="library">
+        <p class="eyebrow">The optical laboratory / 26</p>
+        <h1>Magic Eye <br /><em>Studio.</em></h1>
+        <p>
+          A picture hidden in a pattern. Choose a shape, then look beyond the
+          surface.
+        </p>
+        <div class="section-label">
+          The depth collection <span>16 studies</span>
+        </div>
+        <p class="drag-instruction">
+          Drag a sample onto the main image to generate it. Or click a sample.
+        </p>
+        <div class="gallery">
+          <button
+            type="button"
+            class="sample-card"
+            data-sample="sphere"
+            aria-pressed="true"
+          >
+            <img
+              src="images/depth/sphere.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>Sphere</span></button
+          ><button
+            type="button"
+            class="sample-card"
+            data-sample="torus"
+            aria-pressed="false"
+          >
+            <img
+              src="images/depth/torus.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>Torus</span></button
+          ><button
+            type="button"
+            class="sample-card"
+            data-sample="heart"
+            aria-pressed="false"
+          >
+            <img
+              src="images/depth/heart.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>Heart</span></button
+          ><button
+            type="button"
+            class="sample-card"
+            data-sample="rings"
+            aria-pressed="false"
+          >
+            <img
+              src="images/depth/rings.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>Rings</span></button
+          ><button
+            type="button"
+            class="sample-card"
+            data-sample="spiral"
+            aria-pressed="false"
+          >
+            <img
+              src="images/depth/spiral.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>Spiral</span></button
+          ><button
+            type="button"
+            class="sample-card"
+            data-sample="mountain"
+            aria-pressed="false"
+          >
+            <img
+              src="images/depth/mountain.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>Mountain</span></button
+          ><button
+            type="button"
+            class="sample-card"
+            data-sample="star"
+            aria-pressed="false"
+          >
+            <img
+              src="images/depth/star.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>Star</span></button
+          ><button
+            type="button"
+            class="sample-card"
+            data-sample="wave"
+            aria-pressed="false"
+          >
+            <img
+              src="images/depth/wave.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>Wave</span></button
+          ><button
+            type="button"
+            class="sample-card"
+            data-sample="69420"
+            aria-pressed="false"
+          >
+            <img
+              src="images/depth/69420.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>69420</span></button
+          ><button
+            type="button"
+            class="sample-card"
+            data-sample="smiley"
+            aria-pressed="false"
+          >
+            <img
+              src="images/depth/smiley.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>Smiley</span></button
+          ><button
+            type="button"
+            class="sample-card"
+            data-sample="troll"
+            aria-pressed="false"
+          >
+            <img
+              src="images/depth/troll.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>Troll grin</span></button
+          ><button
+            type="button"
+            class="sample-card"
+            data-sample="rage"
+            aria-pressed="false"
+          >
+            <img
+              src="images/depth/rage.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>Rage face</span></button
+          ><button
+            type="button"
+            class="sample-card"
+            data-sample="deal"
+            aria-pressed="false"
+          >
+            <img
+              src="images/depth/deal.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>Deal with it</span></button
+          ><button
+            type="button"
+            class="sample-card"
+            data-sample="cat"
+            aria-pressed="false"
+          >
+            <img
+              src="images/depth/cat.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>Keyboard cat</span></button
+          ><button
+            type="button"
+            class="sample-card"
+            data-sample="alien"
+            aria-pressed="false"
+          >
+            <img
+              src="images/depth/alien.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>Space invader</span></button
+          ><button
+            type="button"
+            class="sample-card"
+            data-sample="jenga"
+            aria-pressed="false"
+          >
+            <img
+              src="images/depth/jenga.png"
+              width="300"
+              height="200"
+              loading="lazy"
+              alt=""
+            /><span>JENGA</span>
+          </button>
+        </div>
+        <figure class="optical-art">
+          <img
+            src="images/optical-study.webp"
+            width="600"
+            height="900"
+            alt="Engraved study of eyes and an antique stereoscope"
+            loading="lazy"
+          />
+          <figcaption>A little perspective changes everything.</figcaption>
+        </figure>
+        <p class="micro">
+          Black sits at the back. White comes forward. Grey shades create the
+          space between.
+        </p>
+      </aside>
+      <section class="studio" aria-label="Stereogram workspace">
+        <div class="viewer-column">
+          <div class="viewer-heading">
+            <div>
+              <p class="eyebrow">LOOK BEYOND THE SURFACE</p>
+              <h2 id="view-title">Find another dimension.</h2>
+            </div>
+            <span class="badge" id="dimensions">1200 × 800</span>
+          </div>
+          <p class="drop-instruction" id="drop-instruction">
+            ↓ Drag a sample here — the Magic Eye image updates immediately.
+          </p>
+          <div class="viewer" id="viewer" aria-describedby="drop-instruction">
+            <div class="viewer-toolbar">
+              <button
+                class="icon-button"
+                id="fullscreen"
+                type="button"
+                aria-label="Open viewer full screen"
+                title="Full screen"
+              >
+                ⛶
+              </button>
+              <div aria-label="Image preview" class="tabs" role="tablist">
+                <button
+                  aria-controls="panel-stereo"
+                  aria-selected="true"
+                  data-view="stereo"
+                  id="tab-stereo"
+                  role="tab"
+                >
+                  Stereogram</button
+                ><button
+                  aria-controls="panel-depth"
+                  aria-selected="false"
+                  data-view="depth"
+                  id="tab-depth"
+                  role="tab"
+                  tabindex="-1"
+                >
+                  Depth map</button
+                ><button
+                  aria-controls="panel-original"
+                  aria-selected="false"
+                  data-view="original"
+                  id="tab-original"
+                  role="tab"
+                  tabindex="-1"
+                >
+                  Original
+                </button>
+              </div>
+              <button
+                aria-label="Exit full screen"
+                class="icon-button"
+                hidden=""
+                id="close-fullscreen"
+                type="button"
+              >
+                ✕
+              </button>
+            </div>
+            <div
+              aria-labelledby="tab-stereo"
+              class="canvas-panel"
+              id="panel-stereo"
+              role="tabpanel"
+            >
+              <canvas
+                aria-label="Generated Magic Eye stereogram. Select Depth map to reveal the hidden shape."
+                height="848"
+                id="stereo"
+                width="1200"
+              ></canvas>
+            </div>
+            <div
+              aria-labelledby="tab-depth"
+              class="canvas-panel"
+              hidden=""
+              id="panel-depth"
+              role="tabpanel"
+            >
+              <canvas
+                aria-label="Grayscale depth map. White is near; black is far."
+                height="800"
+                id="depth"
+                width="1200"
+              ></canvas>
+            </div>
+            <div
+              aria-labelledby="tab-original"
+              class="canvas-panel"
+              hidden=""
+              id="panel-original"
+              role="tabpanel"
+            >
+              <canvas
+                aria-label="Uploaded image positioned within the output frame."
+                height="800"
+                id="original"
+                width="1200"
+              ></canvas>
+            </div>
+            <div class="viewer-bottom">
+              <span id="viewer-note"
+                >Parallel viewing · look through the image</span
+              ><label
+                ><input id="native-size" type="checkbox" /> Actual pixels</label
+              >
+            </div>
+          </div>
+          <div aria-live="polite" class="status" id="status" role="status">
+            Preparing a sample stereogram…
+          </div>
+          <progress
+            aria-label="Generation progress"
+            hidden=""
+            id="progress"
+            max="100"
+            value="0"
+          ></progress>
+          <div class="actions">
+            <button class="btn primary" id="generate" type="button">
+              Generate Magic Eye</button
+            ><button class="btn secondary" hidden="" id="cancel" type="button">
+              Cancel
+            </button>
+          </div>
+          <div class="actions">
+            <button class="btn secondary" id="shuffle" type="button">
+              New pattern</button
+            ><button class="btn secondary" id="reset" type="button">
+              Reset settings
+            </button>
+          </div>
+          <div class="preview-grid">
+            <figure>
+              <canvas
+                aria-label="Original image thumbnail"
+                height="200"
+                id="source-thumb"
+                width="300"
+              ></canvas>
+              <figcaption>
+                <span>01 / Source image</span
+                ><b id="source-name">Floating sphere · sample</b>
+              </figcaption>
+            </figure>
+            <figure>
+              <canvas
+                aria-label="Depth map thumbnail"
+                height="200"
+                id="depth-thumb"
+                width="300"
+              ></canvas>
+              <figcaption>
+                <span>02 / Depth map</span><b>Black = far · white = near</b>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="viewing-tip">
+            <span aria-hidden="true">◎</span>
+            <p>
+              <strong>Let the pattern become three-dimensional.</strong> Relax
+              your gaze as though looking through a window. The two guide dots
+              should merge into three, with the middle pair overlapping. Keep
+              the image level.
+            </p>
+          </div>
+        </div>
+      </section>
+      <aside aria-label="Generator controls" class="controls">
+        <h2>Create your stereogram</h2>
+        <p class="micro">
+          Images stay in your browser. No account or engine server required.
+        </p>
+        <label class="upload-zone" for="upload" id="drop-zone"
+          ><span aria-hidden="true" class="upload-icon">↑</span
+          ><strong>Choose an image</strong
+          ><span>or drop it here · PNG, JPEG, WebP</span
+          ><input
+            accept="image/png,image/jpeg,image/webp,image/avif,image/gif,image/bmp"
+            id="upload"
+            type="file"
+        /></label>
+        <p class="micro" id="file-info">
+          Try the sample first, then add your own image.
+        </p>
+        <div class="field">
+          <label for="sample">Sample depth image</label
+          ><select id="sample">
+            <option value="sphere">Sphere</option>
+            <option value="torus">Torus</option>
+            <option value="heart">Heart</option>
+            <option value="rings">Rings</option>
+            <option value="spiral">Spiral</option>
+            <option value="mountain">Mountain</option>
+            <option value="star">Star</option>
+            <option value="wave">Wave</option>
+            <option value="69420">69420</option>
+            <option value="smiley">Smiley</option>
+            <option value="troll">Troll grin</option>
+            <option value="rage">Rage face</option>
+            <option value="deal">Deal with it</option>
+            <option value="cat">Keyboard cat</option>
+            <option value="alien">Space invader</option>
+            <option value="jenga">JENGA</option>
+          </select>
+        </div>
+        <button class="btn secondary full" id="load-sample" type="button">
+          Use this sample
+        </button>
+        <details>
+          <summary>Depth &amp; shape</summary>
+          <div class="detail-content">
+            <div class="field">
+              <label for="map-mode">Shade interpretation</label
+              ><select id="map-mode">
+                <option value="relief">Smooth grayscale relief</option>
+                <option value="layers">Five depth layers</option>
+                <option value="silhouette">Black &amp; white silhouette</option>
+              </select>
+            </div>
+            <div class="slider-field">
+              <label for="contrast"
+                >Contrast
+                <output for="contrast" id="contrast-value">1.20</output></label
+              ><input
+                id="contrast"
+                max="3"
+                min="0.5"
+                step="0.05"
+                type="range"
+                value="1.2"
+              />
+            </div>
+            <div class="slider-field">
+              <label for="gamma"
+                >Midtones
+                <output for="gamma" id="gamma-value">1.00</output></label
+              ><input
+                id="gamma"
+                max="2.5"
+                min="0.3"
+                step="0.05"
+                type="range"
+                value="1"
+              />
+            </div>
+            <div class="slider-field" hidden="" id="threshold-field">
+              <label for="threshold"
+                >Silhouette threshold
+                <output for="threshold" id="threshold-value">50%</output></label
+              ><input
+                id="threshold"
+                max="95"
+                min="5"
+                step="1"
+                type="range"
+                value="50"
+              />
+            </div>
+            <div class="slider-field">
+              <label for="smoothing"
+                >Smoothing
+                <output for="smoothing" id="smoothing-value"
+                  >3 px</output
+                ></label
+              ><input
+                id="smoothing"
+                max="12"
+                min="0"
+                step="1"
+                type="range"
+                value="3"
+              />
+            </div>
+            <label class="check"
+              ><input id="invert" type="checkbox" /> Invert depth (dark shades
+              come forward)</label
+            ><label class="check"
+              ><input checked id="normalise" type="checkbox" /> Expand the
+              image's tonal range</label
+            >
+          </div>
+        </details>
+        <details open="">
+          <summary>Pattern &amp; output</summary>
+          <div class="detail-content">
+            <div class="two-fields">
+              <div class="field">
+                <label for="palette">Pattern colours</label
+                ><select id="palette">
+                  <option value="ocean">Navy &amp; ivory</option>
+                  <option value="confetti">Classic confetti</option>
+                  <option value="mono">Black &amp; white</option>
+                  <option value="forest">Forest</option>
+                  <option value="sunset">Sunset</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="grain">Dot size</label
+                ><select id="grain">
+                  <option value="1">Fine · 1 px</option>
+                  <option selected value="2">Medium · 2 px</option>
+                  <option value="3">Coarse · 3 px</option>
+                </select>
+              </div>
+            </div>
+            <div class="slider-field">
+              <label for="strength"
+                >Depth strength
+                <output for="strength" id="strength-value">25%</output></label
+              ><input
+                id="strength"
+                max="40"
+                min="8"
+                step="1"
+                type="range"
+                value="25"
+              />
+            </div>
+            <div class="slider-field">
+              <label for="spacing"
+                >Pattern spacing
+                <output for="spacing" id="spacing-value">10%</output></label
+              ><input
+                id="spacing"
+                max="14"
+                min="6"
+                step="0.5"
+                type="range"
+                value="10"
+              />
+            </div>
+            <div class="slider-field">
+              <label for="scale"
+                >Subject size
+                <output for="scale" id="scale-value">75%</output></label
+              ><input
+                id="scale"
+                max="90"
+                min="35"
+                step="1"
+                type="range"
+                value="75"
+              />
+            </div>
+            <div class="two-fields">
+              <div class="field">
+                <label for="resolution">Output width</label
+                ><select id="resolution">
+                  <option value="800">800 px · quick</option>
+                  <option selected value="1200">1200 px</option>
+                  <option value="1800">1800 px</option>
+                  <option value="2400">2400 px · large</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="aspect">Canvas shape</label
+                ><select id="aspect">
+                  <option value="landscape">Landscape · 3:2</option>
+                  <option value="square">Square · 1:1</option>
+                  <option value="portrait">Portrait · 4:5</option>
+                  <option value="source">Match source</option>
+                </select>
+              </div>
+            </div>
+            <label class="check"
+              ><input checked id="guides" type="checkbox" /> Include viewing
+              dots in PNG</label
+            >
+          </div>
+        </details>
+        <div class="download-group">
+          <button class="btn primary full" disabled id="download" type="button">
+            ↓ Download stereogram PNG</button
+          ><button
+            class="btn secondary full"
+            disabled
+            id="download-depth"
+            type="button"
+          >
+            ↓ Download depth map
+          </button>
+        </div>
+        <p class="micro" id="output-info">
+          Download is enabled when generation finishes.
+        </p>
+      </aside>
+    </main>
+    <footer>
+      <span>Jenga-Code / Images, patterns &amp; perception</span
+      ><a href="/apps/">Explore all applications →</a>
+    </footer>
+    <script type="module" src="js/studio-v4.js"></script>
+  </body>
+</html>
